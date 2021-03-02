@@ -1,0 +1,77 @@
+// Place all the styles related to the Articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+@import "bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,100&family=Krona+One&family=Ubuntu:ital,wght@1,300&display=swap');
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+.navbar-brand {
+  font-family: 'Krona One', sans-serif;
+}
+
+.container {
+  width: 1000px;
+  margin: 20px auto;
+  border: 1px solid rgba(0,0,0,0.3);
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+.form-container {
+   width: 600px;
+  margin: 60px auto;
+  border: 1px solid rgba(0,0,0,0.3);
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+.form-group {
+  padding: 60px;
+}
+
+.form-control {
+  margin-bottom: 10px;
+}
+
+.container-card {
+  width: 600px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.buttons a {
+  font-size: 20px;
+}
+
+.card {
+  padding: 40px;
+  text-align: center;
+  margin: 50px auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.banner {
+  font-family: 'Krona One', sans-serif;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 50px;
+}
+
+ul {
+  list-style: none;
+}
+
+li a {
+  color: lightblue;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+li a:hover {
+    text-decoration: none;
+  }
+
+.content {
+  font-family: 'Fira Sans', sans-serif;
+}
+

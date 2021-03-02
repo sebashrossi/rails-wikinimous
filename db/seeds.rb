@@ -1,3 +1,4 @@
+require 'faker'
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
 #
@@ -5,3 +6,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+puts 'Destroying all articles..'
+Article.destroy_all
+10.times do
+  article = Article.create!(title: "#{Faker::Movies::StarWars.character}", content: "#{Faker::Movies::StarWars.quote}")
+  puts "#{article.title} Succesfully created"
+end
+puts 'Finished...'

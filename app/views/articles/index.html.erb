@@ -1,0 +1,14 @@
+<%= render 'navbar' %>
+<div class="container">
+<h1 class="banner">Articles</h1>
+  <ul>
+    <% @articles.each do |art| %>
+    <li>
+      <div class="article">
+      <%= link_to art.title, article_path(art) %>
+      <p class="content"><%= art.content %></p>
+      </div>
+    </li>
+    <% end %>
+  </ul>
+</div>
